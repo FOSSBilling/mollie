@@ -7,6 +7,10 @@ on:
     branches: [main]
 
 jobs:
+  spellcheck:
+    name: Spellcheck
+    uses: FOSSBilling/.workflows/.github/workflows/spellcheck.yml@main
+
   composer:
     runs-on: ubuntu-latest
 
